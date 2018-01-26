@@ -1,0 +1,239 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="/duobao/pub/home/css/withdrawals.css?v=1"/>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+		<link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+		<!--<link rel="stylesheet" href="css/withdrawals.css?v=1"/>-->
+		<!--<link rel="stylesheet" href="css/imageflow.css" />-->
+		<style type="text/css">
+			html{
+				font-size:20px ;
+			}
+			.icon {
+		       width: 1em; height: 1em;
+		       vertical-align: -0.15em;
+		       fill: currentColor;
+		       overflow: hidden;
+		    }
+		    
+		</style>
+		<script type='text/javascript' src='/duobao/pub/home/js/jquery-3.1.0.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+		<!--如果你用到了拓展包中的组件，还需要引用下面两个-->
+		<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.js' charset='utf-8'></script>
+		<!--字体库-->
+		<script src="https://at.alicdn.com/t/font_402007_u1musog5uyirizfr.js " type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body >
+	<script type="text/javascript">
+	<!-- $(function(){ -->
+		<!-- function getNumber(){ -->
+			<!-- $.getJSON("/duobao/index.php/Index/get_number",function(json){ -->
+				
+		   <!-- }) -->
+		<!-- } -->
+		<!-- setInterval(getNumber,'10000'); -->
+	<!-- }) -->
+    
+ 
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		function add_date_number(){
+		
+			$.getJSON("/duobao/index.php/Index/add_date_number",function(json){
+				//alert(json);
+		   })
+		}
+		setInterval(add_date_number,'8000');
+	})
+    
+ 
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		function bangdan(){
+		
+			$.getJSON("/duobao/index.php/List/bangdan",function(json){
+				
+		   })
+		}
+		setInterval(bangdan,'3600000');
+	})
+    
+ 
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		function lottery_start(){
+			$.getJSON("/duobao/index.php/Index/lottery_start",function(json){
+				
+		   })
+		}
+		setInterval(lottery_start,'8000');
+	})
+    
+ 
+</script>
+
+
+<script type="text/javascript">
+	//60秒请求一次统计接口
+    function tongji(){
+        $.getJSON("/duobao/index.php/Index/tongji",function(json){
+			
+	   })
+	}
+ setInterval(tongji,'60000');
+</script>
+
+
+
+		<div class="page-group">
+			<!-- 工具栏 -->
+		 	<div id="div1" class="page page-current">
+	        	
+	            <nav class="bar bar-tab">
+                    <a class="tab-item external active" href="/duobao/index.php/Index/index.html">
+                        <svg class="icon" aria-hidden="true" >
+                            <use xlink:href="#icon-duobao"></use>
+                        </svg>
+                        <span class="tab-label">夺宝</span>
+                    </a>
+                    <a class="tab-item external" href="/duobao/index.php/List/index.html">
+                        <svg class="icon" aria-hidden="true" >
+                            <use xlink:href="#icon-agent_jiangbei"></use>
+                        </svg>
+                        <span class="tab-label">风云榜</span>
+                    </a>
+                    <a class="tab-item external" href="/duobao/index.php/Lottery/index.html">
+                        <svg class="icon" aria-hidden="true" >
+                            <use xlink:href="#icon-kaijiang"></use>
+                        </svg>
+                        <span class="tab-label">开奖</span>
+                    </a>
+                    <a class="tab-item external" href="/duobao/index.php/My/index.html">
+                        <svg class="icon" aria-hidden="true" >
+                            <use xlink:href="#icon-wode"></use>
+                        </svg>
+                        <span class="tab-label">我的</span>
+                    </a>
+                </nav>
+				<!--内容-->
+				<div class="content">
+						<div class="">
+							<div class="card withdrawals_card" style="margin:2%;">
+							    <div class="card-content">
+							      <div class="card-content-inner">
+								    <div class="withdrawals_cardheader">
+								    	<p>提取金额</p>
+								    	<p>
+								    		<span id="ye"><?php echo ($info["money"]); ?></span>元
+								    	</p>
+								    </div>
+							      	<div class="withdrawals_cardcontent">
+							      		<div class="">
+							      			<div class="withdrawals_cardmoney">
+							      				<span>金额:</span><input  onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" type="text" name="" id="jine" value="" />
+							      			</div>
+							      			
+							      			<p>温馨提示:单笔提现第三方支付平台将收取手续费2元（每日第一次免费）</p>
+											<p>本次提现:<span style="color:red"><?php echo ($msg); ?></span></p>
+							      		</div>
+							      		<!-- <a href="#" class="popup popup-tixian"> -->
+							      			<input type="button" id="tixian" value="提现" />
+							      		<!-- </a> -->
+							      	</div>
+							      </div>
+							    </div>
+							  </div>
+						</div>
+				</div>
+
+
+			</div>
+			<!-- 工具栏 -->
+			<div id="div2" class="page " >
+				
+                <div class=" tixianPop" style="width:100%;height:100%;background:rgba(0,0,0,0.5);">
+                    <div class="content">
+                        <div class="content-block"style="position:relative;top:20%;width:80%;margin-left:10% ">
+                         	
+							<div class="card demo-card-header-pic" >
+							    <div valign="bottom" class="card-header color-white no-border no-padding">
+							      <img class='card-cover' src="/duobao/pub/home/img/weixin.png" alt="">
+							    </div>
+							    <div class="card-content">
+							      <div class="card-content-inner" style="text-align:center">
+							        <p class="color-gray">请识别二维码添加加好友</p>
+							      </div>
+							    </div>
+							</div>
+
+                        </div>
+                    </div>
+                </div>
+			</div>
+
+
+		</div>
+		<script type="text/javascript">
+		//window.location.reload();
+		$(function(){
+			$("#tixian").click(function(){
+				var jine=$("#jine").val();
+				if(jine==""){
+					alert("金额不能为空!");
+				}else if(jine<2){
+					alert("最低提现额度2元");
+				}else{
+					$.post("/duobao/index.php/My/tixian",{jine:jine},function(data){
+						if(data==-1){
+							alert("余额不够!");
+						}else{
+							alert("提现成功!");
+							$('#ye').html(data);
+							$("#div1").removeClass("page-current");
+							$("#div2").addClass("page-current");
+						}
+					})
+				}
+			})
+			$("#div2").click(function(){
+				$("#div2").removeClass("page-current");
+				$("#div1").addClass("page-current");
+			})
+		})
+			
+		</script>
+		
+		<script src="/duobao/pub/home/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(document).on('click','.aboutPopclick', function (e) {
+				  $(this).css({'background':'red','color':'white'});
+				  $(this).parent().siblings().find('.aboutPopclick').css({'background':'','color':''})
+				});
+				 $('.aboutPopclickText').click(function(e){
+				 	 $(this).attr({'type':'text','value':''});
+				 });
+				//  $(document).on('click','.open-tixian', function () {
+				//   $.popup('.popup-tixian');
+				// });
+				
+			});
+			$.init();
+			</script>
+	</body>
+</html>

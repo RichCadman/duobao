@@ -1,0 +1,66 @@
+<script type="text/javascript">
+	<!-- $(function(){ -->
+		<!-- function getNumber(){ -->
+			<!-- $.getJSON("__APP__/Index/get_number",function(json){ -->
+				
+		   <!-- }) -->
+		<!-- } -->
+		<!-- setInterval(getNumber,'10000'); -->
+	<!-- }) -->
+    
+ 
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		function add_date_number(){
+		
+			$.getJSON("__APP__/Index/add_date_number",function(json){
+				//alert(json);
+		   })
+		}
+		setInterval(add_date_number,'8000');
+	})
+    
+ 
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		function bangdan(){
+		
+			$.getJSON("__APP__/List/bangdan",function(json){
+				
+		   })
+		}
+		setInterval(bangdan,'3600000');
+	})
+    
+ 
+</script>
+
+<script type="text/javascript">
+	$(function(){
+		function lottery_start(){
+			$.getJSON("__APP__/Index/lottery_start",function(json){
+				
+		   })
+		}
+		setInterval(lottery_start,'8000');
+	})
+    
+ 
+</script>
+
+
+<script type="text/javascript">
+	//60秒请求一次统计接口
+    function tongji(){
+        $.getJSON("__APP__/Index/tongji",function(json){
+			
+	   })
+	}
+ setInterval(tongji,'60000');
+</script>
+
+

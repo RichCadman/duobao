@@ -1,0 +1,370 @@
+[ 2017-10-04T10:23:12+08:00 ] 123.151.148.187 /duobao/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:12+08:00 ] 123.151.148.187 /duobao/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:14+08:00 ] 123.151.148.187 /duobao/index.php/Login/login_do?code=081PRBT11zfEMM13XQU11OeyT11PRBT3&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: access_token C:\wamp\www\duobao\lib\ThinkPHP\Library\Vendor\Card\class_weixin_adv.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cow_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cow_userinfo` SET `user_name`='！',`user_photo`='http://wx.qlogo.cn/mmopen/vi_32/ggg5dgcxD0F3YKAS5PZypWwcm6bQN621ic9RVAuntCFmURsZ2aWj3iaqiadrROic8QJmJ5pmKTT33E6R7cQr7Nembg/0' WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:14+08:00 ] 123.151.148.187 /duobao/index.php/Login/login_do?code=001tSG3u0X58Qe1EBN2u04gA3u0tSG3O&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: access_token C:\wamp\www\duobao\lib\ThinkPHP\Library\Vendor\Card\class_weixin_adv.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cow_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cow_userinfo` SET `user_name`='！',`user_photo`='http://wx.qlogo.cn/mmopen/vi_32/ggg5dgcxD0F3YKAS5PZypWwcm6bQN621ic9RVAuntCFmURsZ2aWj3iaqiadrROic8QJmJ5pmKTT33E6R7cQr7Nembg/0' WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:14+08:00 ] 123.151.148.187 /duobao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1Qj2VWt8wBCBAmSpZ04VX34' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_buy` [ RunTime:0.0000s ]
+SQL: SELECT * FROM cow_buy a,cow_userinfo b,cow_goods c WHERE ( a.wx=1 and a.controller=0 and a.user_id=b.id and a.goods_id=c.id ) ORDER BY buy_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM cow_buy a,cow_userinfo b,cow_goods c WHERE ( a.wx=1 and a.user_id=b.id and a.goods_id=c.id and a.controller!=0 and a.success=1 ) ORDER BY buy_time desc LIMIT 0,40   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` ORDER BY award_time desc LIMIT 0,100   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: number C:\wamp\www\duobao\app\Runtime\Cache\Home\7d1be2da70a3ea5a748881a71cd7aefd.php 第 668 行.
+NOTIC: [8] Undefined index: new_date_number C:\wamp\www\duobao\app\Runtime\Cache\Home\7d1be2da70a3ea5a748881a71cd7aefd.php 第 670 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2017-10-04T10:23:17+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:18+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:19+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:20+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:21+08:00 ] 117.185.27.115 /duobao/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:21+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:22+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:23+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:24+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:24+08:00 ] 123.151.148.187 /duobao/index.php/Index/add_date_number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cow_award` WHERE ( date_number='20171004026' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_buy` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_buy` WHERE ( date_number='20171004025' )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `cow_award` (`date_number`,`dan`,`shuang`,`award_number`,`type`,`award_time`) VALUES ('20171004026','0','0','17476','2','2017-10-04 10:21:36') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:24+08:00 ] 123.151.148.187 /duobao/index.php/Index/lottery_start
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( date_number='20171004026' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( date_number='20171004026' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_buy` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_buy` WHERE ( wx=1 and type=2 and controller=0 and date_number='20171004025' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_buy` WHERE ( date_number='20171004025' and wx=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:25+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:26+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:27+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:28+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:29+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:30+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:31+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:32+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:32+08:00 ] 123.151.148.187 /duobao/index.php/Index/add_date_number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cow_award` WHERE ( date_number='20171004026' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:32+08:00 ] 123.151.148.187 /duobao/index.php/Index/lottery_start
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( date_number='20171004026' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( date_number='20171004026' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_buy` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_buy` WHERE ( wx=1 and type=2 and controller=0 and date_number='20171004025' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_buy` WHERE ( date_number='20171004025' and wx=1 )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:33+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:34+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:23:34+08:00 ] 117.185.27.115 /duobao/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-04T10:23:35+08:00 ] 123.151.148.187 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-04T10:27:32+08:00 ] 101.226.89.119 /duobao/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

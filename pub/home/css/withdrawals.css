@@ -1,0 +1,41 @@
+.withdrawals_card{
+	margin: 2%;
+	margin-top:5rem;
+	background: none;
+	border: none;
+	box-shadow:none;
+	width: 96%;
+}
+.withdrawals_cardheader{
+	text-align: center;
+	font-size: 1.5rem;
+}
+.withdrawals_cardcontent{
+	width: 100%;
+}
+.withdrawals_cardcontent div{
+	width: 100%;
+}
+.withdrawals_cardcontent p{
+	width: 100%;
+}
+.withdrawals_cardcontent>input{
+	margin:0.5rem 2% ;
+	background: #f7533b;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	width: 100%;
+	font-size: 1.5rem;
+}
+.withdrawals_cardmoney{
+	width: 100%;
+	background:white;
+	font-size: 1rem;
+}
+.withdrawals_cardmoney input{
+	display: inline-block;
+	width: 85%;
+	/*border: none;*/
+	height: 2rem;
+}

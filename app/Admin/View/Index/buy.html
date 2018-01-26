@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/uniform.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/select2.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/matrix-style.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/matrix-media.css" />
+<link href="__ROOT__/pub/adminfont-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<include file="Public:header" />
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
+  <ul>
+    <!-- <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li><a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
+    <li><a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li> -->
+    <li><a href="__APP__/Index/index.html"><i class="icon icon-th"></i> <span>开奖统计</span></a></li>
+	<li class="active"><a href="__APP__/Index/buy.html"><i class="icon icon-th"></i> <span>购买记录</span></a></li>
+	<li><a href="__APP__/Index/tongji.html"><i class="icon icon-th"></i> <span>盈利统计</span></a></li>
+    <li><a href="__APP__/Index/date_number.html"><i class="icon icon-fullscreen"></i> <span>开奖记录</span></a></li>
+	<li><a href="__APP__/Index/tixian.html"><i class="icon icon-fullscreen"></i> <span>提现记录</span></a></li>
+	<li><a href="__APP__/Index/chongzhi.html"><i class="icon icon-fullscreen"></i> <span>充值记录</span></a></li>
+	<li><a href="__APP__/Index/yonghu.html"><i class="icon icon-fullscreen"></i> <span>用户</span></a></li>
+	<!-- <li><a href="__APP__/Index/qihao.html"><i class="icon icon-fullscreen"></i> <span>修改</span></a></li> -->
+  <!-- <li><a href="__APP__/Index/kj.html"><i class="icon icon-fullscreen"></i> <span>开奖</span></a></li> -->
+    <!-- <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a> -->
+      <!-- <ul> -->
+        <!-- <li><a href="#">Basic Form</a></li> -->
+        <!-- <li><a href="#">Form with Validation</a></li> -->
+        <!-- <li><a href="#">Form with Wizard</a></li> -->
+      <!-- </ul> -->
+    <!-- </li>  -->
+     <!-- <li><a href="#"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li> -->
+   <!-- <li><a href="#"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li> -->
+   <!-- <li class="#"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a> -->
+     <!-- <ul> -->
+       <!-- <li><a href="#">Dashboard2</a></li> -->
+       <!-- <li><a href="#">Gallery</a></li> -->
+       <!-- <li><a href="#">Calendar</a></li> -->
+       <!-- <li><a href="#">Chat option</a></li> -->
+     <!-- </ul> -->
+   <!-- </li>  -->
+   <!--  <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
+     <ul>
+       <li><a href="error403.html">Error 403</a></li>
+       <li><a href="error404.html">Error 404</a></li>
+       <li><a href="error405.html">Error 405</a></li>
+       <li><a href="error500.html">Error 500</a></li>
+     </ul>
+   </li> -->
+    <!-- <li class="content"> <span>Monthly Bandwidth Transfer</span>
+      <div class="progress progress-mini progress-danger active progress-striped">
+        <div style="width: 77%;" class="bar"></div>
+      </div>
+      <span class="percent">77%</span>
+      <div class="stat">21419.94 / 14000 MB</div>
+    </li> -->
+    <!-- <li class="content"> <span>Disk Space Usage</span>
+      <div class="progress progress-mini active progress-striped">
+        <div style="width: 87%;" class="bar"></div>
+      </div>
+      <span class="percent">87%</span>
+      <div class="stat">604.44 / 4000 MB</div>
+    </li> -->
+  </ul>
+</div>
+
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="#" class="current">统计</a> </div>
+    <h1>统计</h1>
+  </div>
+  <div class="container-fluid">
+    <!-- <hr> -->
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>统计</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>序号</th>
+                  <th>客户名称</th>
+                  <th>买入商品</th>
+                  <th>买入单数</th>
+                  <th>买入类型<span style="color:red">(1为单，2为双)</span></th>
+				  <th>开奖状态<span style="color:red">(1为已开奖，0未开奖)</span></th>
+                  <th>获胜状态<span style="color:red">(1为获胜，2为失败)</span></th>
+				  <th>购买时间</th>
+				  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+			  <foreach name="info" key="k" item="v">
+                <tr class="gradeX">
+                  <td style="text-align:center">{$k+1}</td>
+                  <td style="text-align:center">{$v.user_name}</td>
+				  
+				  <if condition="$v['goods_id']==4">
+                  <td style="text-align:center"><span style="color:blue">20</span>元充值卡</td>
+				  <td style="text-align:center">{$v.number}</td>
+                  <td style="text-align:center">{$v['type']}</td>
+					  
+				  <td style="text-align:center"><span style="color:red">{$v.controller}</span></td>
+				  <td style="text-align:center"><span style="color:green">{$v.success}</span></td>
+					  
+				  <elseif condition="$v['goods_id']==8" />
+				  <td style="text-align:center"><span style="color:#14ed44">50</span>元充值卡</td>
+				  <td style="text-align:center">{$v.number}</td>
+                  <td style="text-align:center">{$v['type']}</td>
+					  
+				  <td style="text-align:center"><span style="color:red">{$v.controller}</span></td>
+				  <td style="text-align:center"><span style="color:green">{$v.success}</span></td>
+				  <elseif condition="$v['goods_id']==12" />
+				  <td style="text-align:center"><span style="color:#f50e53">100</span>元充值卡</td>
+				  <td style="text-align:center">{$v.number}</td>
+                  <td style="text-align:center">{$v['type']}</td>
+					  
+				  <td style="text-align:center"><span style="color:red">{$v.controller}</span></td>
+				  <td style="text-align:center"><span style="color:green">{$v.success}</span></td>
+				  </if>
+				  
+				  
+				  
+				  <td style="text-align:center">{:date("Y-m-d H:i:s",$v['buy_time'])}</td>
+				  <td><a href="__APP__/Index/update_index2/id/{$v.id}">修改</a> /<a href="javascript:void();" onclick="del({$v.id})">删除</a></td>
+                </tr>
+               </foreach>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+function del(id){
+  if(confirm("确定删除此记录?")){
+	window.location="__APP__/Index/del2/id/"+id;
+  }
+}
+</script>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in/">Themedesigner.in</a> </div>
+</div>
+<!--end-Footer-part-->
+<script src="__ROOT__/pub/admin/js/jquery.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.ui.custom.js"></script> 
+<script src="__ROOT__/pub/admin/js/bootstrap.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.uniform.js"></script> 
+<script src="__ROOT__/pub/admin/js/select2.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.dataTables.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/matrix.js"></script> 
+<script src="__ROOT__/pub/admin/js/matrix.tables.js"></script>
+</body>
+</html>

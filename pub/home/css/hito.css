@@ -1,0 +1,33 @@
+/*列表*/
+.hitoTab_content{
+	margin: 0;
+	padding: 0;
+}
+.hitoTab_contentblock{
+	margin: 0;
+	padding: 0;
+}
+.hitoTab_contentblock .list-block{
+	margin: 0;
+}
+.hitoTab .buttons-tab a{
+	font-size:1rem ;
+	color: #666666;
+}
+.hitoTab_contentblock div ul li{
+	border-bottom: 1px solid #ccc;
+
+}
+.hitoTab .buttons-tab a.active{
+	color: #e6be46;
+	border-color: #e6be46;
+}
+.hitoTab_contentblocktitle{
+	font-size: 0.9rem !important;
+	color: #9e7000 !important;
+}
+.hitoTab_contentblocktext{
+	font-size: 0.6rem !important;
+	color: #454545 !important;
+	line-height:2.1rem !important;
+}

@@ -1,0 +1,68 @@
+﻿.card-header.row{
+	margin-left:0;
+	background:#626262 ;
+	height: 1.5rem;
+	min-height:1.5rem;
+}
+
+.card-header svg{
+	fill: white;
+}
+ .card-header .col-95{
+	
+	margin-left: 6%;
+	word-break:keep-all;/* 不换行 */
+	white-space:nowrap;/* 不换行 */
+	overflow: -webkit-marquee;
+	-webkit-marquee-direction:left;　　/* 文字滚动方向 可选值为left | right | up | down */
+　　	-webkit-marquee-speed:slow;　　/* 文字滚动速度 可选值为slow | normal | fast */
+　　	-webkit-marquee-style:scroll;　　/* 文字滚动方式 可选值为scroll | slide | alternate */
+　　	-webkit-marquee-repetition:infinite;　　/* 文字滚动次数 number | infinite ， infinite即无限次循环滚动 */
+}
+.card-header .col-95 marquee{
+	font-size: 0.7rem;
+	white-space：normal
+	line-height: 1.9rem;
+	/*display: inline;*/
+	float:left;
+	color: white;
+}
+/*列表*/
+.content-block-title.row{
+	margin: 0;
+	height: 2.5rem;
+}
+.content-block-title.row .col-33{
+	text-align: center;
+	line-height: 2.5rem;
+}
+.record_lists.list-block{
+	margin: 0;
+}
+.record_lists.list-block ul li{
+	padding: 0 0.75rem;
+}
+
+.record_listsContent.item-content{
+	padding-left: 0;
+}
+.record_list.item-inner {
+	
+	padding-right: 0;
+	margin-left: 0;
+}
+/*.record_list.item-inner .col-33.item-after{
+	text-align: center;
+}
+.lotteryTab_blockTab6Inner{
+	font-size: 0.7rem;
+}*/
+.record_list div:nth-of-type(2) span{
+	color:#e6bc40;
+}
+.record_list .record_listOne{
+	color: #f91800;
+}
+.record_list .record_listTwo{
+	color: #19962a;
+}

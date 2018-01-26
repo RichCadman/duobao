@@ -1,0 +1,140 @@
+﻿/*列表*/
+
+.hitoTitle{
+	background: white;
+	position: relative;
+}
+.hitoTitle .col-33{
+	margin-left: 0;
+	width: 32.3333%;
+	font-size:0.7rem ;
+	color: #ff0000;
+}
+
+.hitoCard{
+	margin: 0;
+	padding-left: 0;
+}
+.hitoCard_img{
+	width: 6rem;
+	height: 4.5rem;
+	position: relative;
+	padding: 0 !important;
+}
+.hitoCard_img img{
+	width: 100%;
+	height: 2.5rem;
+	position: absolute;
+	top: 0.5rem;
+}
+.hitoCard_state{
+	/*background: #BBBBBB;*/
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 3rem;
+}
+
+.hitoCard_text.item-text {
+	height: 1.05rem;
+}
+.hitoCardFooter_img img{
+	border-radius: 50%;
+}
+.card-footer.hitoCardFooter{
+	padding: 0 0.75rem;
+	    border-bottom: 1px solid #CCCCCC;
+}
+.hitoCardFooter_inner{
+	position: absolute;
+	left: 3.2rem;
+}
+.hitoCard_btn{
+	line-height: 1.35rem;
+}
+/*popup*/
+.btnPop{
+	background: none;
+}
+.btnPop_content{
+	background: rgba(0,0,0,0.5);
+}
+.btnPop_card{
+	    position: relative;
+    	top: 15%;
+    	/*margin-top: -5rem;*/
+}
+.btnPop_title{
+	width: 100%;
+	text-align: center;
+}
+.btnPop_cardContent .row{
+	margin-left: 0;
+	    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+.btnPop_cardContent .row .col-33{
+	text-align: center;
+}
+.btnPop_cardContent .row .col-33 p{
+	margin: 0;
+	line-height: 1.2rem;
+}
+.btnPop_cardContent .row .col-33 p:nth-of-type(2){
+	color: #cd0505;
+}
+.btnPop_img{
+	width: 3rem;
+	position: relative;
+	left: 1.1rem;
+}
+.btnPop_img img{
+	width: 100%;
+}
+.btnPop_imgPk{
+	position: relative;
+    top: 2rem;
+    left: 1rem;
+}
+.btnPop_contentInner{
+	margin: 0;
+}
+.btnPop_contentInner li span:nth-of-type(1){
+	color: #666;
+}
+.btnPop_contentInner li span:nth-of-type(2){
+	color: #cc0000;
+}
+.btnPopFooter{
+	width: 100%;
+	height: 6rem;
+	text-align: center;
+}
+.btnPopFooter>img{
+	margin:0 auto;
+	/*
+	margin-top: 0;
+	clear:both;
+	width: 3rem;*/
+}
+.btnPopFooter_content img{
+	    margin-top: 2.5rem ;
+}
+.btnPopFooter_text{
+	/*background: url(__ROOT__/pub/home/image/winner.png) no-repeat center ;*/
+	/*padding-top: 0.5rem;*/
+	color: white;
+	position: relative;
+	top: -3.4rem;
+}
+.loser_bg{
+	background:#999999;
+	color:white;
+}
+.success_bg{
+	background:red;
+	color:white;
+}
+.state_bg{
+	background:#FAFAFA;
+}

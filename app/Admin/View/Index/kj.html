@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/colorpicker.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/datepicker.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/uniform.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/select2.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/matrix-style.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/matrix-media.css" />
+<link rel="stylesheet" href="__ROOT__/pub/admin/css/bootstrap-wysihtml5.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<include file="Public:header" />
+
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
+  <ul>
+    <!-- <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li><a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
+    <li><a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li> -->
+    <li><a href="__APP__/Index/index.html"><i class="icon icon-th"></i> <span>开奖统计</span></a></li>
+	<li><a href="__APP__/Index/buy.html"><i class="icon icon-th"></i> <span>购买记录</span></a></li>
+  <li><a href="__APP__/Index/tongji.html"><i class="icon icon-th"></i> <span>盈利统计</span></a></li>
+    <li><a href="__APP__/Index/date_number.html"><i class="icon icon-fullscreen"></i> <span>开奖记录</span></a></li>
+  <li><a href="__APP__/Index/tixian.html"><i class="icon icon-fullscreen"></i> <span>提现记录</span></a></li>
+  <li><a href="__APP__/Index/chongzhi.html"><i class="icon icon-fullscreen"></i> <span>充值记录</span></a></li>
+  <li><a href="__APP__/Index/yonghu.html"><i class="icon icon-fullscreen"></i> <span>用户</span></a></li>
+  <!-- <li><a href="__APP__/Index/qihao.html"><i class="icon icon-fullscreen"></i> <span>修改</span></a></li> -->
+   <!-- <li><a href="__APP__/Index/kj.html"><i class="icon icon-fullscreen"></i> <span>开奖</span></a></li> -->
+    
+  </ul>
+</div>
+
+<!--close-left-menu-stats-sidebar-->
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="tip-bottom">Form elements</a> <a href="#" class="current">Common elements</a> </div>
+  <h1>开奖</h1>
+</div>
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>开奖</h5>
+        </div>
+        <div class="widget-content nopadding">
+            <div class="form-actions">
+              <a href="__APP__/Index/lottery_start"><button type="submit" class="btn btn-success">开奖</button></a>
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div></div>
+<!--Footer-part-->
+
+<!--end-Footer-part--> 
+<script src="__ROOT__/pub/admin/js/jquery.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.ui.custom.js"></script> 
+<script src="__ROOT__/pub/admin/js/bootstrap.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/bootstrap-colorpicker.js"></script> 
+<script src="__ROOT__/pub/admin/js/bootstrap-datepicker.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.toggle.buttons.html"></script> 
+<script src="__ROOT__/pub/admin/js/masked.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.uniform.js"></script> 
+<script src="__ROOT__/pub/admin/js/select2.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/matrix.js"></script> 
+<script src="__ROOT__/pub/admin/js/matrix.form_common.js"></script> 
+<script src="__ROOT__/pub/admin/js/wysihtml5-0.3.0.js"></script> 
+<script src="__ROOT__/pub/admin/js/jquery.peity.min.js"></script> 
+<script src="__ROOT__/pub/admin/js/bootstrap-wysihtml5.js"></script> 
+<script>
+	$('.textarea_editor').wysihtml5();
+</script>
+</body>
+</html>

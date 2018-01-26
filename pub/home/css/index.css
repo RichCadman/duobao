@@ -1,0 +1,459 @@
+﻿li{
+	list-style: none;
+}
+.lottery{
+	width: 100%;
+}
+.lottery_top.card{
+	margin: 0 !important;
+}
+.lottery_top .card-header{
+	background:#626262 ;
+	height: 1.5rem;
+	min-height:1.5rem;
+}
+.lottery_top .card-header svg{
+	fill: white;
+}
+.lottery_top .card-header .col-95{
+	
+	margin-left: 6%;
+	word-break:keep-all;/* 不换行 */
+	white-space:nowrap;/* 不换行 */
+	overflow: -webkit-marquee;
+	-webkit-marquee-direction:left;　　/* 文字滚动方向 可选值为left | right | up | down */
+　　	-webkit-marquee-speed:slow;　　/* 文字滚动速度 可选值为slow | normal | fast */
+　　	-webkit-marquee-style:scroll;　　/* 文字滚动方式 可选值为scroll | slide | alternate */
+　　	-webkit-marquee-repetition:infinite;　　/* 文字滚动次数 number | infinite ， infinite即无限次循环滚动 */
+}
+.lottery_top .card-header .col-95 marquee{
+	font-size: 0.7rem;
+	white-space：normal
+	line-height: 1.9rem;
+	/*display: inline;*/
+	float:left;
+	color: white;
+}
+/*头像*/
+.lottery_middle_card{
+	width: 100%;
+	padding-right: 0.5rem!important;
+}
+.lottery_middle_card ul{
+	width: 100%;
+	/*float: right;*/
+	padding-left: 0!important;
+}
+.lottery_middle_card ul:after{
+	display:block;clear:both;content:"";visibility:hidden;height:0
+}
+.lottery_middle_card ul{zoom:1}
+.lottery_middle_card ul li{
+	float: left;
+	border: 1px solid #f35443;
+	border-radius: 5px;
+	margin-left:1rem;
+	width: 2.7rem;
+	text-align: center;
+}
+.lottery_middle_card ul li a{
+	color: #f35443;
+	font-size: 0.7rem;
+}
+.lottery_middle_id{
+	width: 96%;
+	margin-left: 4%;
+}
+.lottery_middle_id .col-60{
+	margin: 0;
+}
+.lottery_middle_id div {
+	font-size: 0.7rem;
+	color: #493212;
+}
+.lottery_middle_id div:nth-of-type(1) p{
+	display: inline;
+	margin-left: 1rem;
+} 
+/*下面*/
+.lottery_bottom {
+	width: 100%;
+	margin: 0 auto;
+}
+.lottery_bottom p{
+	margin: 0;
+	font-size: 0.7rem;
+	margin: 0 auto;
+	color:#493212 ;
+}
+.lottery_bottom p span:nth-of-type(1){
+	color:#f35443 ;
+}
+.lottery_bottom p span:nth-of-type(2){
+	background:#f35443 ;
+	border-radius: 5px;
+	color: white;
+	padding:0.1rem 0.25rem;
+}
+/*中间*/
+.lotteryTab{
+	margin-top: 0.5rem;
+}
+.lotteryTab .buttons-tab a{
+	font-size: 0.7rem;
+}
+.lotteryTab_block{
+	margin: 0;
+}
+/*tab底部*/
+.lotteryTab_footer.card{
+	margin: 0;
+}
+.lotteryTab_footertext{
+	font-size: 0.5rem;
+	color: #a9a9a9;
+	    padding:0 0.75rem;
+}
+.lotteryTab_footertext a{
+	color: #f35443;
+}
+
+.lotteryTab_footerul{
+	margin:0;
+	padding: 0;
+	margin-top: 0.7rem;
+}
+/*.lotteryTab_footerul li{
+	margin:0 !important;
+	margin-right: 4%!important;
+}*/
+.lotteryTab_footerul li:nth-of-type(1){
+	margin-left:0;
+	margin-right: 4%; 
+}
+.lotteryTab_footerul li:nth-of-type(1) input{
+	background: #42a5f6;
+	padding: 10%;
+}
+.lotteryTab_footerul li:nth-of-type(3) input{
+	margin-right: 0!important;
+	background: #f35443;
+	padding:10% ;
+	margin-left:4%; 
+}
+.lotteryTab_footerul li input{
+	width:100%;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+.lotteryTab_footerul li:nth-of-type(2){
+	font-size: 0.6rem;
+	width: 32.333% !important;
+	/*margin-right: 0 !important;*/
+	text-align: center;
+	margin-left: 0;
+}
+.lotteryTab_footerul li:nth-of-type(2) p{
+	color: #493212;
+	margin: 0!important;
+	text-align: center;
+}
+.lotteryTab_footerul li:nth-of-type(2) span{
+	color: #F35443;
+}
+/**/
+.lotteryfooterTab{
+	margin-top: 0.5rem;
+}
+.lotteryfooterTab .buttons-tab a{
+	font-size: 0.7rem;
+}
+.buttons-tab .button.active {
+    color: #17cebf;
+    border-color: #17cebf;
+}
+.lotteryTab_block{
+	padding: 0;
+} 
+.lotteryTab_block .content-block{
+	padding: 0;
+	margin: 0;
+	height: 7rem;
+	width: 100%
+} 
+
+#tab4 .content-block,#tab4 .content-block .list-block,
+#tab5 .content-block,#tab5 .content-block .list-block,
+#tab6 .content-block,#tab6 .content-block .list-block
+ {
+	margin: 0;
+}
+.lotteryfooterTab_ul li{
+	height: 3.9rem;
+}
+.lotteryTab_blockInner{
+	font-size: 0.7rem;
+}
+.lotteryTab_blockInnerafter span:nth-of-type(2){
+	margin-left: 0.25rem;
+}
+.lotteryTab_blockInnertext{
+	font-size: 0.7rem !important;
+	line-height: 2.1rem !important;
+}
+.lotteryTab_blockInnerTitle{
+	color: #9e7000;
+}
+.lotteryTab_blockTab6Title{
+	margin-top: 0.5rem;
+}
+.lotteryTab_blockTab6Title div{
+	text-align: center;
+	width: 100%;
+}
+.lotteryTab_blockTab6Inner{
+	font-size: 0.7rem;
+}
+.lotteryTab_blockTab6Inner div:nth-of-type(2) span{
+	color:#e6bc40;
+}
+.lotteryTab_blockTab6Inner .colorone{
+	color: #f91800;
+}
+.lotteryTab_blockTab6Inner .colortwo{
+	color: #19962a;
+}
+
+
+/*popup*/
+
+/*买入*/
+.aboutPop,.servicesPop{
+	background:none;
+	/*opacity: ;*/
+}
+.aboutPop .content,.servicesPop .content{
+	background: rgba(0, 0, 0, 0.5);
+}
+.aboutPop .content-block{
+	width: 100%;
+	/*height: 100%;*/
+	/*background:red;
+	opacity:0.5;*/
+}
+.aboutPop .content-block .card,.servicesPop .content-block .card{
+	margin: 0;
+	
+}
+.aboutPop .row,.servicesPop .row{
+	margin: 0;
+	padding: 0;
+	    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #F35443;
+}
+.aboutPop .row:nth-of-type(2),.servicesPop .row:nth-of-type(2){
+	padding-bottom:0.5rem ;
+	border-bottom:1px solid #F35443;
+}
+.aboutPop .row .col-25,.aboutPop .row .col-33,
+.servicesPop .row .col-25,.servicesPop .row .col-33{
+	margin-bottom: 0.5rem;
+	margin: 0.5rem 2% 0 !important ;
+}
+.aboutPop .row .col-25 input,.aboutPop .row .col-33 input,
+.servicesPop .row .col-25 input,.servicesPop .row .col-33 input{
+	width: 100%;
+	border:1px solid #F35443;
+	background: none;
+	padding:0.25rem 0.5rem;
+}
+.aboutPop .content-block .card:nth-of-type(2) .card-content,
+.servicesPop .content-block .card:nth-of-type(2) .card-content{
+	/*padding-bottom:0.5rem ;*/
+	border-bottom:1px solid #F35443;
+}
+/*提醒*/
+.aboutPop_tixing,.servicesPop_tixing{
+	width: 100%;
+	margin: 0 auto;
+}
+.aboutPop_tixing .card-header,.servicesPop_tixing .card-header{
+	font-size: 0.8rem;
+	text-align: center;
+	min-height: 0;
+	padding: 0.5rem;
+}
+
+.aboutPop_tixing .card-header span,.servicesPop_tixing .card-header span{
+	font-size: 0.5rem;
+	margin: 0 auto;
+}
+
+.aboutPop_tixing .card-content .col-50 p,
+.servicesPop_tixing .card-content .col-50 p,
+{
+	font-size: 0.6rem;
+}
+.servicesPop_tixing .card-content{
+	border-bottom:1px solid #F35443;
+}
+.aboutPop_tixing .card-content .col-50 p span:nth-of-type(1),
+.servicesPop_tixing .card-content .col-50 p span:nth-of-type(1)
+{
+	color:#493212;
+}
+.aboutPop_tixingspan{
+	color:#19962a;
+}
+.aboutPop_tixingspans{
+	color:#f91800;
+}
+.aboutPop_btn{
+	width: 100%;
+	background: white;
+}
+.aboutPop_btn input{
+	width: 92%;
+	margin:0.5rem 4% ;
+	background: #f7533b;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	padding: 0.5rem;
+}
+.aboutPop_cardcontent .row{
+	border: none;
+}
+/*banner*/
+
+/*.swiper-container{
+	height: 7rem;
+	width: 100%;
+	
+	position:relative
+}*/
+/*.swiper-wrapper {
+	height: 7rem;
+	width: 100%;
+	position:relative
+}
+
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+.lotteryTab_blockbanner{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide.box{
+	width: 180px;
+}
+.swiper-slide.box img{
+	width: 250px;
+	height: 5rem;
+	
+}*/
+.card_box{
+	width: 100%;
+	height: 100%
+}
+.swiper-wrapper{
+	transform: translate3d(-632.5px, 0px, 0px) ;
+    transition-duration: 0ms ;
+    width: 100%;
+    height: 7rem;
+}
+
+.swiper-slide.box{
+	width: 180px;
+}
+.bannerCard.card{
+	color: #493212;
+    text-align: center;
+    padding: 8px;
+    width: 180px;
+    background: none;
+    box-shadow: none;
+}
+.swiper-slide .card img{
+	display: inline;
+	width: 100%
+}
+.swiper-slide .card  span{
+	display: block;
+}
+
+.swiper-slide.box:nth-of-type(1){
+	transform:translate3d(320px, 0px, -600px) rotateX(0deg) rotateY(0deg); 
+	z-index: -7;
+	transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(2){
+	transform: translate3d(240px, 0px, -450px) rotateX(0deg) rotateY(0deg);
+	z-index: -5;
+	transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(3){
+	transform: translate3d(160px, 0px, -300px) rotateX(0deg) rotateY(0deg);
+	z-index: -3;
+	transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(4){
+	transform: translate3d(80px, 0px, -150px) rotateX(0deg) rotateY(0deg);
+	z-index: -1;
+	transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(5){
+	transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+	z-index: 1;
+	transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(6){
+		transform: translate3d(-80px, 0px, -150px) rotateX(0deg) rotateY(0deg);
+		z-index: -1;
+		transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(7){
+	transform: translate3d(-160px, 0px, -300px) rotateX(0deg) rotateY(0deg);
+	z-index: -3;
+	transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(8){
+	transform: translate3d(-240px, 0px, -450px) rotateX(0deg) rotateY(0deg);
+    z-index: -5;
+    transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(9){
+	transform: translate3d(-320px, 0px, -600px) rotateX(0deg) rotateY(0deg);
+    z-index: -7;
+    transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(10){
+	transform: translate3d(-400px, 0px, -750px) rotateX(0deg) rotateY(0deg);
+    z-index: -9;
+    transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(11){
+	transform: translate3d(-240px, 0px, -900px) rotateX(0deg) rotateY(0deg);
+    z-index: -11;
+    transition-duration: 0ms;
+}
+.swiper-slide.box:nth-of-type(12){
+	transform: translate3d(-280px, 0px, -2100px) rotateX(0deg) rotateY(0deg);
+    z-index: -13;
+    transition-duration: 0ms;
+}
+.pay_header{
+	background: #f7533b;
+	color: white;
+}
+.pay_header span{
+	margin: 0 auto;
+}
+.pay_text{
+	margin: 0.25em 0;
+}
+

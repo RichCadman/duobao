@@ -1,0 +1,97 @@
+[ 2017-10-02T16:57:57+08:00 ] 124.239.251.36 /duobao/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-02T16:57:58+08:00 ] 124.239.251.36 /duobao/index.php/Login/login_do?code=0111kfVa1UaHpt0vI4Ta1BT0Va11kfVm&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: access_token C:\wamp\www\duobao\lib\ThinkPHP\Library\Vendor\Card\class_weixin_adv.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cow_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1XOLoOyPh-owwyawdrskQVw' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cow_userinfo` SET `user_name`='杨振宇',`user_photo`='http://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEL6suvXAe88PHjXFiaWQicI9ajRAgyLJE0ib5ZQwCPb6OeRiaarNMfm6CO7icCF90liarcShvIp3Ziaics0aw/0' WHERE ( openid='ot3tm1XOLoOyPh-owwyawdrskQVw' ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1XOLoOyPh-owwyawdrskQVw' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-02T16:57:58+08:00 ] 124.239.251.36 /duobao/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_userinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_userinfo` WHERE ( openid='ot3tm1XOLoOyPh-owwyawdrskQVw' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_buy` [ RunTime:0.0000s ]
+SQL: SELECT * FROM cow_buy a,cow_userinfo b,cow_goods c WHERE ( a.wx=1 and a.controller=0 and a.user_id=b.id and a.goods_id=c.id ) ORDER BY buy_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM cow_buy a,cow_userinfo b,cow_goods c WHERE ( a.wx=1 and a.user_id=b.id and a.goods_id=c.id and a.controller!=0 and a.success=1 ) ORDER BY buy_time desc LIMIT 0,40   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` ORDER BY award_time desc LIMIT 0,100   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: number C:\wamp\www\duobao\app\Runtime\Cache\Home\7d1be2da70a3ea5a748881a71cd7aefd.php 第 668 行.
+NOTIC: [8] Undefined index: new_date_number C:\wamp\www\duobao\app\Runtime\Cache\Home\7d1be2da70a3ea5a748881a71cd7aefd.php 第 670 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-02T16:58:01+08:00 ] 124.239.251.36 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-02T16:58:02+08:00 ] 124.239.251.36 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-02T16:58:03+08:00 ] 124.239.251.36 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-10-02T16:58:04+08:00 ] 124.239.251.36 /duobao/index.php/Index/number
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cow_award` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cow_award` WHERE ( award_number!='' ) ORDER BY date_number desc LIMIT 1   [ RunTime:0.0000s ]
+
